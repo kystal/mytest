@@ -1,12 +1,24 @@
+<a name="top"></a>
+<header>
+            
+            <div class="banner-left">
+                <h1>DETAIL</h1>
+            </div>
+            <div class="banner-right">
+                <span>login</span>
+                <div class="move"></div>
+            </div>
+            
+</header>
 <div class="phone-images">
   <img ng-src="{{img}}" class="phone"
       ng-class="{selected: img === $ctrl.mainImageUrl}"
       ng-repeat="img in $ctrl.phone.images" />
 </div>
 
-<h1>{{$ctrl.phone.name}}</h1>
+<h1 class='phonename'>{{$ctrl.phone.name}}</h1>
 
-<p>{{$ctrl.phone.description}}</p>
+<p class='phonedes'>{{$ctrl.phone.description}}</p>
 
 <ul class="phone-thumbs">
   <li ng-repeat="img in $ctrl.phone.images">
@@ -115,3 +127,29 @@
     <dd>{{$ctrl.phone.additionalFeatures}}</dd>
   </li>
 </ul>
+<section id="section-1">
+            
+            <div class="mes">
+                <p>联系我们</p>
+                <p>为了更好的获取我们最新的产品资讯，您可以留下您的电子邮箱快速订阅我们的产品资讯<br/>也可以通过以下任何方式关注我们的动态</p>
+            </div>
+            <div class="text">
+                <input type="email" placeholder="someone@email.com"/>
+                <input type="submit" value=" 提交"/>
+            </div>
+            <div class="icon">
+                <i class="fa fa-qq"></i>
+                <i class="fa fa-weibo"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-globe"></i>
+            </div>
+            
+        </section>
+       <footer>
+            <div class="mes">
+                <span>@2017</span>
+            </div>
+            <div class="back">
+                <a href="#top">this is a footer</a>
+            </div>
+        </footer>

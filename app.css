@@ -6,8 +6,85 @@ h1 {
   border-bottom: 1px solid gray;
   margin-top: 0;
 }
+header{
+    width: 100%;
+    height: 60px;
+    font-size: 0;
+}
+header .banner-left{
+    height: 60px;
+    width: 5%;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 60px;
+    text-align: center;
+    
+    position: relative;
+    left: 7%;
+    
+    background: url(../images/icon-1.png) no-repeat left;
+    background-size: 16% 50%;
+}
+header .banner-left h1{
+    color: #4E3A4F;
+    font-size: 35px;
+    font-weight: 500;
+    margin: 0;
+    cursor: default;
+}
+header .banner-right{
+    font-size: 14px;
+    color: #E53C3C;
+    height: 60px;
+    width: 7%;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
+    
+    position: relative;
+    left: 80%;
+    
+    background: url(../images/icon-2.jpg) no-repeat left;
+    background-size: 15px 18px;
+}
+header .banner-right .move{
+    width: 0;
+    border-top: 2px solid #E53C3C;
+    position: absolute;
+    top: 45px;
+    left: 25%;
+    
+    -webkit-transition:width 0.4s ease-in-out;
+    -moz-transition:width 0.4s ease-in-out;
+    transition:width 0.4s ease-in-out;
+}
+header .banner-right:hover .move{
+    width: 50px;
+}
 
 /* View: Phone list */
+.col-md-2 p{
+  font-size: 18px;
+}
+.col-md-10 p{
+  font-family: 'Microsoft YaHei';
+}
+.col-md-10 a{
+  font-size: 15px;
+  cursor: pointer;
+}
+ .col-md-10 a:hover{
+   color: #FF6100 ;
+}
+.phonename{
+  color: #8C7853;
+  font-style: italic;
+}
+.phonedes{
+  color:  #855E42;
+}
 .phones {
   list-style: none;
 }
@@ -27,6 +104,7 @@ h1 {
 }
 
 /* View: Phone detail */
+
 .phone {
   background-color: white;
   display: none;
@@ -75,6 +153,7 @@ h1 {
   list-style: none;
   margin: 0;
   padding: 0;
+  color: #4E2F2F;
 }
 
 .specs dt {
@@ -90,4 +169,109 @@ h1 {
 .specs > li > span {
   font-size: 1.2em;
   font-weight: bold;
+}
+#section-1{
+    width: 100%;
+    height: 250px;
+    text-align: center;
+    background-color: #D9D9F3;
+}
+#section-1 .mes{
+    width: 100%;
+    height: 100px;
+    color: #33363F;
+    display: inline-block;
+    margin-top: 80px;
+}
+#section-1 .mes p:first-child{
+    font-size: 20px;
+}
+#section-1 .mes p:last-child{
+    font-size: 14px;
+}
+#section-1 .text{
+    width: 100%;
+    height: 40px;
+    display: inline-block;
+    font-size: 0;
+}
+#section-1 .text input[type="email"]{
+    width: 500px;
+    height: 40px;
+    font-size: 15px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    color: #75757F;
+}
+#section-1 .text input[type="email"]:focus{
+    outline: 0;
+}
+#section-1 .text input[type="submit"]{
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 5px;
+    border: 0;
+    box-sizing: border-box;
+    background-color: #75757F;
+    
+    -webkit-transition: background-color 0.4s ease-in-out;
+    -moz-transition: background-color 0.4s ease-in-out;
+    transition: background-color 0.4s ease-in-out;
+}
+#section-1 .text input[type="submit"]:hover{
+    background-color: #5E5E68;
+}
+#section-1 .icon{
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    font-size: 30px;
+    display: inline-block;
+    position: relative;
+    top: 30px;
+}
+#section-1 .icon i{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+    margin: 0;
+    cursor: pointer;
+    
+    -webkit-transition: font-size 0.4s ease-in-out;
+    -moz-transition: font-size 0.4s ease-in-out;
+    transition: font-size 0.4s ease-in-out;
+}
+#section-1 .icon i:hover{
+    font-size: 35px;
+}
+footer{
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    background-color: #30303A;
+}
+footer .mes,footer .back{
+    width: 300px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: #fff;
+    font-size: 10px;
+}
+footer .mes{
+    float: left;
+}
+footer .mes span{
+    cursor: pointer;
+}
+footer .back{
+    float: right;
+}
+footer .back a{
+    text-decoration: none;
+    color: #fff;
 }

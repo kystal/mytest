@@ -12,6 +12,7 @@ angular.
         }).
         when('/phones/:phoneId', {
           template: '<phone-detail></phone-detail>'
+          //template: '{{$ctrl.phoneId}} <phone-detail></phone-detail>'没有变化
         }).
         otherwise('/phones');
     }
