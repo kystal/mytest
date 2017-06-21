@@ -5,9 +5,14 @@
                 <h1>SEARCH</h1>
             </div>
             <div class="banner-right">
-                <span>login</span>
+                <a href='#!/login'>login</a>
                 <div class="move"></div>
             </div>
+            <div class="banner-right">
+                <a href='#!/logout'  ng-show="loginUser!=''">logout</a>
+                <div class="move"></div>
+            </div>
+            <div>{{loginUser}}</div>
             
         </header>
   <div class="row">

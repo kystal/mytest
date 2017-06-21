@@ -4,7 +4,7 @@ angular.
   module('phonecatApp').
   config(['$locationProvider' ,'$routeProvider',
     function config($locationProvider, $routeProvider) {
-      $locationProvider.hashPrefix('!');
+      $locationProvider.hashPrefix('!');//前缀
 
       $routeProvider.
         when('/phones', {
@@ -13,6 +13,12 @@ angular.
         when('/phones/:phoneId', {
           template: '<phone-detail></phone-detail>'
           //template: '{{$ctrl.phoneId}} <phone-detail></phone-detail>'没有变化
+        }).
+        when('/login',{
+          template:'<user-login></user-login>'
+        }).
+        when('/logout',{
+           template:'<user-login></user-login>'
         }).
         otherwise('/phones');
     }

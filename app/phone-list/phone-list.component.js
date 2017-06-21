@@ -5,8 +5,12 @@ angular.
   module('phoneList').
   component('phoneList', {
     templateUrl: 'phone-list/phone-list.template.html',
-    controller: ['Phone',
-      function PhoneListController(Phone) {
+    controller: ['Phone','$scope','$location',
+      function PhoneListController(Phone,$scope,$location) {
+        if($scope.loginUser=='')
+        {
+           $location.path('./user-login/user-login.template.html');
+        }
         this.phones = Phone.query();
         this.orderProp = 'age';
       }

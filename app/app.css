@@ -63,7 +63,9 @@ header .banner-right .move{
 header .banner-right:hover .move{
     width: 50px;
 }
-
+.time{
+  float: right;
+}
 /* View: Phone list */
 .col-md-2 p{
   font-size: 18px;
